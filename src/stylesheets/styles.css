@@ -11,6 +11,12 @@
         - In the third article section, align the items vertically and centered, align the dividers appropriately
 */
 
+@import url("../fonts/Roboto-Font/stylesheet.css");
+
+* {
+    font-family: robotoregular;
+}
+
 :root {
     --icon-size: 25px;
     --small-icon-size: calc(var(--icon-size) - 10);
