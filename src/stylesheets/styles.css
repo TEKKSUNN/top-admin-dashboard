@@ -1,0 +1,12 @@
+/* TODO:
+    - Layout the items using grid
+    Sidebar:
+        - Align the items vertically, and to the left
+    Header:
+        - Align all items inside horizontally and centered, and separate the two sides
+    Main:
+        - Layout the items using grid
+        - In the first article section, dynamically layout the items, and align the texts to the left
+        - In the second article section, align the items vertically and centered, separated by border-bottom, except if its the last child
+        - In the third article section, align the items vertically and centered, align the dividers appropriately
+*/
