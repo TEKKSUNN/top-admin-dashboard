@@ -14,6 +14,8 @@
 :root {
     --icon-size: 25px;
     --small-icon-size: calc(var(--icon-size) - 10);
+    --main-color: rgb(47, 0, 255);
+    --dark-main-color: hsl(251, 75%, 50%);
 }
 
 a {
@@ -23,6 +25,24 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 18px 24px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: var(--dark-main-color);
 }
 
 body {
@@ -47,7 +67,7 @@ main {
 
 #sidebar {
     grid-area: sidebar;
-    background-color: rgb(47, 0, 255);
+    background-color: var(--main-color);
     padding: 25px;
 }
 
@@ -106,4 +126,51 @@ header input {
 header a:nth-of-type(2) > img {
     height: calc(var(--icon-size) + 10px);
     width: calc(var(--icon-size) + 10px);
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 8fr / 1fr;
+}
+
+main > .grid-item-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 18px;
+    box-shadow: 0 10px 10px -5px black;
+}
+
+.grid-item-1 .side {
+    display: flex;
+    gap: 8px;
+}
+
+.grid-item-1 img {
+    border-radius: 25px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 24px;
+}
+
+main > .grid-item-2 {
+    display: grid;
+    grid-template: 1fr 1fr / 4fr 1fr;
+    grid-template-areas:
+      "articles sidebar1"
+      "articles sidebar2";
+}
+
+.grid-item-2 .articles-1 {
+    grid-area: articles;
+}
+
+.grid-item-2 .articles-2 {
+    grid-area: sidebar1;
+}
+
+.grid-item-2 .articles-3 {
+    grid-area: sidebar2;
 }
