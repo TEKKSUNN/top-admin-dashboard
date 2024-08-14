@@ -11,6 +11,14 @@
         - In the third article section, align the items vertically and centered, align the dividers appropriately
 */
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     height: 100vh;
     width: auto;
@@ -20,6 +28,8 @@ body {
       "sidebar header"
       "sidebar main";
     gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -32,5 +42,32 @@ main {
 
 #sidebar {
     grid-area: sidebar;
+    background-color: rgb(47, 0, 255);
+    padding: 25px;
+}
+
+#sidebar * {
+    color: white;
+}
+
+#sidebar > div:first-of-type,
+#sidebar div > a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#sidebar > div {
+    margin-bottom: 25px;
+}
+
+#sidebar img {
+    height: 50px;
+    width: 50px;
+}
+
+#sidebar a > img {
+    height: 25px;
+    width: 25px;
 }
 
