@@ -11,6 +11,11 @@
         - In the third article section, align the items vertically and centered, align the dividers appropriately
 */
 
+:root {
+    --icon-size: 25px;
+    --small-icon-size: calc(var(--icon-size) - 10);
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -67,8 +72,8 @@ main {
 }
 
 #sidebar a > img {
-    height: 25px;
-    width: 25px;
+    height: var(--icon-size);
+    width: var(--icon-size);
 }
 
 header {
@@ -87,8 +92,8 @@ header .right-side > a:nth-of-type(2) {
 
 header img {
     border-radius: 25px;
-    height: 30px;
-    width: 30px;
+    height: var(--icon-size);
+    width: var(--icon-size);
 }
 
 header input {
@@ -96,4 +101,9 @@ header input {
     border: 1px solid rgb(68, 68, 68);
     padding: 8px 16px;
     width: 400px;
+}
+
+header a:nth-of-type(2) > img {
+    height: calc(var(--icon-size) + 10px);
+    width: calc(var(--icon-size) + 10px);
 }
