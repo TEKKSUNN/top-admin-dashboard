@@ -10,3 +10,27 @@
         - In the second article section, align the items vertically and centered, separated by border-bottom, except if its the last child
         - In the third article section, align the items vertically and centered, align the dividers appropriately
 */
+
+body {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 4fr;
+    grid-template-areas:
+      "sidebar header"
+      "sidebar main";
+    gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
