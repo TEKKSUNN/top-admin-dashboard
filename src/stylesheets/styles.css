@@ -188,7 +188,7 @@ main > .grid-item-2 {
     grid-template-areas:
       "articles sidebar1"
       "articles sidebar2";
-    background-color: hsl(250, 100%, 92.5%);
+    background-color: hsla(249, 100%, 85%, 0.5);
     padding: 0 24px;
     gap: 25px;
 }
