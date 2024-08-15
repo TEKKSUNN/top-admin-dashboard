@@ -135,8 +135,8 @@ header a:nth-of-type(2) > img {
 }
 
 main {
-    display: grid;
-    grid-template: 20vh 4fr / 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 main > .grid-item-1 {
