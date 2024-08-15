@@ -21,7 +21,7 @@
     --icon-size: 25px;
     --small-icon-size: calc(var(--icon-size) - 10);
     --main-color: rgb(47, 0, 255);
-    --dark-main-color: hsl(251, 75%, 50%);
+    --dark-main-color: hsl(251, 75%, 25%);
 }
 
 a {
