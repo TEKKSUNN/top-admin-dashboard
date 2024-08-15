@@ -254,3 +254,34 @@ p {
 .article-options {
     align-self: flex-end;
 }
+
+.articles-2 .articles {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.articles-2 .articles * {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.articles-2 .title {
+    font-size: 12px;
+}
+
+.articles-2 p {
+    font-size: 12px;
+}
+
+.articles-2 .articles article {
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
+    padding: 10px 0;
+}
+
+.articles-2 article:last-of-type {
+    border: 0;
+}
