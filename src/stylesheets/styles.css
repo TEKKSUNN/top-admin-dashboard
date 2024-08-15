@@ -39,7 +39,7 @@ ul, ol {
     padding: 0;
 }
 
-button {
+.grid-item-1 button {
     padding: 12px 24px;
     background-color: var(--main-color);
     color: white;
@@ -47,7 +47,7 @@ button {
     border-radius: 25px;
 }
 
-button:hover {
+.grid-item-1 button:hover {
     background-color: var(--dark-main-color);
 }
 
