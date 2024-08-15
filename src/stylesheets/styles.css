@@ -190,6 +190,7 @@ main > .grid-item-2 {
       "articles sidebar2";
     background-color: hsl(250, 100%, 92.5%);
     padding: 0 24px;
+    gap: 25px;
 }
 
 .grid-item-2 .articles-1 {
