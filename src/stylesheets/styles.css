@@ -198,3 +198,9 @@ main > .grid-item-2 {
 .grid-item-2 section > h3 {
     font-size: 20px;
 }
+
+.articles-1 .articles {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 25px;
+}
