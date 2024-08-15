@@ -74,6 +74,9 @@ main {
 #sidebar {
     grid-area: sidebar;
     background-color: var(--main-color);
+}
+
+#sidebar > div:first-of-type {
     padding: 25px;
 }
 
@@ -81,11 +84,17 @@ main {
     color: white;
 }
 
+#sidebar a:hover {
+    text-decoration: none;
+    background-color: var(--dark-main-color);
+}
+
 #sidebar > div:first-of-type,
 #sidebar div > a {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 0 25px;
 }
 
 #sidebar > div {
