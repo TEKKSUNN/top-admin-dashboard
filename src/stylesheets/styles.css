@@ -74,9 +74,12 @@ main {
 #sidebar {
     grid-area: sidebar;
     background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#sidebar > div:first-of-type {
+#sidebar > section > div:first-of-type {
     padding: 25px;
 }
 
@@ -89,7 +92,7 @@ main {
     background-color: var(--dark-main-color);
 }
 
-#sidebar > div:first-of-type,
+#sidebar > section > div:first-of-type,
 #sidebar div > a {
     display: flex;
     align-items: center;
@@ -97,7 +100,7 @@ main {
     padding: 0 25px;
 }
 
-#sidebar > div {
+#sidebar > section > div {
     margin-bottom: 25px;
 }
 
