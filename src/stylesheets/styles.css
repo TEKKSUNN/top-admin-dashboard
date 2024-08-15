@@ -133,8 +133,8 @@ header img {
 
 header input {
     border-radius: 25px;
-    border: 1px solid rgb(68, 68, 68);
-    padding: 8px 16px;
+    border: 1px solid rgba(68, 68, 68, 0.65);
+    padding: 4px 12px;
     width: 400px;
 }
 
